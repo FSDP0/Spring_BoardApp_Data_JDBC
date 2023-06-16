@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 @Getter
 public class Board {
     @Id
-    @Column()
+    @Column
     private Long boardId;
 
     @Column
@@ -35,8 +35,9 @@ public class Board {
     private Date modifiedDate;
 
     @Builder
-    public Board(final Long id, final String title, final String writer, final String contents,
-            final Date createdDate, final Date modifiedDate) {
+    public Board(final Long id, final String title, final String writer,
+            final String contents, final Date createdDate,
+            final Date modifiedDate) {
         this.boardId = id;
         this.boardTitle = title;
         this.boardAuthor = writer;

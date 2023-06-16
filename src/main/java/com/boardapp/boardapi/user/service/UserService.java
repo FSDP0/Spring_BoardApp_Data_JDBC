@@ -1,5 +1,26 @@
 package com.boardapp.boardapi.user.service;
 
-public class UserService {
+import org.springframework.stereotype.Service;
 
+@Service
+public class UserService {
+    public void findAllUser() {
+
+    }
+
+    public void findUserById() {
+
+    }
+
+    public void createUser() {
+
+    }
+
+    public void editUser() {
+
+    }
+
+    public void deleteUser() {
+
+    }
 }
